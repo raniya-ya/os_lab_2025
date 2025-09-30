@@ -1,0 +1,12 @@
+lib/
+*.a
+*.so
+*.o
+static_program
+dynamic_program
+swap
+*.exe
+*.out
+*.swp
+*~
+.DS_Store
