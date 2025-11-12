@@ -26,13 +26,13 @@ struct ThreadArgs {
     uint64_t result;
 };
 
-uint64_t Factorial(const struct FactorialArgs *args) {
-    uint64_t ans = 1;
-    for (uint64_t i = args->begin; i <= args->end; i++) {
-        ans = MultModulo(ans, i, args->mod);
-    }
-    return ans;
-}
+// uint64_t Factorial(const struct FactorialArgs *args) {
+//     uint64_t ans = 1;
+//     for (uint64_t i = args->begin; i <= args->end; i++) {
+//         ans = MultModulo(ans, i, args->mod);
+//     }
+//     return ans;
+// }
 
 void *ServerThread(void *args) {
     struct ThreadArgs *thread_args = (struct ThreadArgs *)args;

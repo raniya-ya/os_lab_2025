@@ -12,18 +12,18 @@
 
 #include "common.h"
 
-uint64_t Factorial(const struct FactorialArgs *args) {
-    uint64_t ans = 1;
-    for (uint64_t i = args->begin; i <= args->end; i++) {
-        ans = MultModulo(ans, i, args->mod);
-    }
-    return ans;
-}
+// uint64_t Factorial(const struct FactorialArgs *args) {
+//     uint64_t ans = 1;
+//     for (uint64_t i = args->begin; i <= args->end; i++) {
+//         ans = MultModulo(ans, i, args->mod);
+//     }
+//     return ans;
+// }
 
-void *ThreadFactorial(void *args) {
-    struct FactorialArgs *fargs = (struct FactorialArgs *)args;
-    return (void *)(uint64_t *)Factorial(fargs);
-}
+// void *ThreadFactorial(void *args) {
+//     struct FactorialArgs *fargs = (struct FactorialArgs *)args;
+//     return (void *)(uint64_t *)Factorial(fargs);
+// }
 
 int main(int argc, char **argv) {
     int tnum = -1;
